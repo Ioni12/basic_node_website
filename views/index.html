@@ -7,11 +7,74 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
   </head>
-  <body>
+  <body class="bg-linear-to-r from-purple-500 to-fuchsia-500">
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="#" class="text-xl font-bold text-blue-600">MyApp</a>
+          </div>
+          <div class="hidden md:flex items-center space-x-4">
+            <a href="/" class="text-gray-600 hover:text-blue-600">Home</a>
+            <a href="/about" class="text-gray-600 hover:text-blue-600">About</a>
+            <a href="/contact" class="text-gray-600 hover:text-blue-600"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+        <a href="/" class="block text-gray-600 py-2 hover:text-blue-600"
+          >Home</a
+        >
+        <a href="/about" class="block text-gray-600 py-2 hover:text-blue-600"
+          >About</a
+        >
+
+        <a href="/contact" class="block text-gray-600 py-2 hover:text-blue-600"
+          >Contact</a
+        >
+      </div>
+    </nav>
     <center>
       <div class="bg-red-500">
         <h1 class="text-white text-[4rem]">hello world</h1>
       </div>
+      <main>
+        <section class="container">
+          <h2>Welcome to My Node.js Website!</h2>
+          <p>
+            This is a simple website built with Node.js and Express to help you
+            learn web development.
+          </p>
+
+          <div class="server-time">
+            <h3>Server Interaction Example:</h3>
+            <button id="get-time">Get Server Time</button>
+            <p id="time-display"></p>
+          </div>
+        </section>
+      </main>
     </center>
+    <script src="../public/js/main.js"></script>
   </body>
 </html>

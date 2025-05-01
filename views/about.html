@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="#" class="text-xl font-bold text-blue-600">MyApp</a>
+          </div>
+          <div class="hidden md:flex items-center space-x-4">
+            <a href="/" class="text-gray-600 hover:text-blue-600">Home</a>
+            <a href="/about" class="text-gray-600 hover:text-blue-600">About</a>
+            <a href="/contact" class="text-gray-600 hover:text-blue-600"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+        <a href="/" class="block text-gray-600 py-2 hover:text-blue-600"
+          >Home</a
+        >
+        <a href="/about" class="block text-gray-600 py-2 hover:text-blue-600"
+          >About</a
+        >
+
+        <a href="/contact" class="block text-gray-600 py-2 hover:text-blue-600"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <center>
+      <main>
+        <section class="container">
+          <h2>About This Project</h2>
+          <p>
+            This is a simple website created to help learn Node.js development.
+            It demonstrates:
+          </p>
+          <ul>
+            <li>Setting up an Express server</li>
+            <li>Creating routes</li>
+            <li>Serving static files</li>
+            <li>Basic templating</li>
+            <li>Handling form submissions</li>
+            <li>Creating API endpoints</li>
+          </ul>
+
+          <h3>Technologies Used:</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript (client-side)</li>
+          </ul>
+        </section>
+      </main>
+    </center>
+    <script src="../public/js/main.js"></script>
+  </body>
+</html>

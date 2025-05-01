@@ -4,6 +4,8 @@ import fs from "fs";
 
 const app = express();
 
+app.set("view engine", "ejs");
+
 app.use(express.static(path.join(process.cwd(), "public")));
 
 app.use(express.json());
